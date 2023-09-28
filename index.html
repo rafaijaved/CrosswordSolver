@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crossword Solver</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Crossword Solver</h1>
+      <div class="input-section">
+        <label for="length">Number of Letters:</label>
+        <select id="length" onchange="generateInputs()">
+          <option value="" disabled selected>Select</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+      <div id="inputFields" class="input-fields"></div>
+      <button class="solve-button" onclick="solve()">Solve</button>
+      <div id="results" class="results"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
